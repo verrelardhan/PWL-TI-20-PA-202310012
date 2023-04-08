@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  } ,
+
+"system_param" : {
+  "hostAPI" : "http://localhost:8080/"
+}
 }

@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import AppRoute from './Pertemuan-3/apps/App.Route';
+import AppRoute from './Pertemuan-4/apps/AppRoute';
 
 const {PUBLIC_URL} = process.env;
 const root = ReactDOM.createRoot(document.getElementById('root'));

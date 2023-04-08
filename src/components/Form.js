@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker"
 
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function Expression() {
+export default function Form() {
 
   // const today = new Date().getFullYear();
   const initialDate = new Date().getFullYear();
@@ -37,6 +37,7 @@ export default function Expression() {
       <div className='row g-5 mt-5'>
         <form onSubmit={handleInput}>
           <div className="row g-3">
+
           <div className="col-sm-12">
               <label for="npm" className="form-label">NPM</label>
               <input type="number" className="form-control" id="npm" value={npm} placeholder=""
@@ -73,13 +74,12 @@ export default function Expression() {
             <div className="col-12">
               <label for="address" className="form-label">Birthdate</label>
               <DatePicker
-                className="form-control"
+                className='form-control'
                 selected={date}
-                placeholderText='Enter Birthdate'
                 dateFormat="yyyy-MM-dd"
-                required={true}
-                onChange={(date) => {setDate(date)}}
-                    />
+                onChange={(date) => setDate(date)}
+                required
+              />
             </div>
 
             {/* <button className="w-100 btn btn-primary btn-lg" type="submit">Submit</button> */}
